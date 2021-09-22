@@ -8,7 +8,7 @@ ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 .logo {
   color: #f9faf8;
@@ -23,23 +23,29 @@ a {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
-img {
-  width: 500px;
-  height: 250px;
+.upper {
+  background: #1f2937;
 }
+
+.up {
+  /* padding: 32px 100px; */
+
+  margin: 0 auto;
+  width: 60%;
+}
+
+/* header start */
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2% 0 4% 0;
 }
-.up {
-  background: #1f2937;
-  padding: 32px 100px;
-}
+
 .desc {
   display: flex;
   padding: 50px 0;
@@ -54,6 +60,12 @@ img {
   font-size: 18px;
   color: #e5e7eb;
 }
+.desc-content {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 10px;
+}
 
 .sign {
   background: #3882f6;
@@ -61,18 +73,109 @@ img {
   width: 100px;
   text-align: center;
   padding: 5px;
+  border-radius: 5px;
+
+  font-size: 1.2em;
 }
 .sign2 {
   border: 2px solid white;
+}
+img {
+  width: 500px;
+  height: 250px;
+}
+/* header end */
+
+/* info start  */
+.middle {
+  width: 60%;
+  margin: 0 auto;
+}
+.info {
+  background-color: white;
+  padding: 3% 0 5% 0;
+}
+.info-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+  padding-bottom: 2%;
+}
+
+.info-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+
+  /* flex-grow: 0; */
+  justify-content: center;
+}
+.info-content div {
+  width: 150px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.blue-triangle {
+  height: 150px;
+  border: #3882f6 solid 4px;
+  border-radius: 10px;
 }
 
 .call {
   background: #3882f6;
   color: white;
 }
-.desc-content {
+.grey {
+  background-color: #e5e7eb;
+}
+
+.quote {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.quote-author {
+  font-weight: bold;
+  text-align: right;
+  font-size: 24px;
+}
+
+.down {
+  background-color: white;
+  padding: 5% 0;
+}
+.call {
+  background-color: #3882f6;
+  width: 60%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  width: 500px;
-  gap: 10px;
+  align-items: center;
+  padding: 3% 0%;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.call-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.call-text {
+  color: lightgrey;
+}
+
+.footer {
+  background: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1% 0;
 }
